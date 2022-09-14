@@ -1,0 +1,336 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff:wght@400;500;700&family=Silkscreen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    text-align: center;
+   font-family: Aboreto;
+   background-color: #2C3639;
+   
+}
+
+
+
+/* Cabeçalho */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: darkslategrey;
+    height: 8vh;
+    position: relative;
+}
+
+.menu div{
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:999px) {
+
+     .lista{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 52vw;
+        height: 92vh;
+        background-color:  darkslategrey;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translate(100%);
+    } 
+
+    .Hdd{
+        opacity: 0;
+        margin-left: 0;
+    }
+
+    .menu div{
+        display: block;
+    }
+
+    .hj{
+        
+        
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 52vw;
+        height: 92vh;
+        background-color:  darkslategrey;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 2s;
+        transform: translateX(10%);
+        z-index: 9;
+    }
+
+   
+
+     
+}
+
+
+.lista {
+ 
+    display: flex;
+    list-style: none;
+    left: 43%;
+   padding-right: 10px;
+}
+
+.lista li{
+    letter-spacing: 3px;
+    margin-left: 5%;
+   
+}
+a{
+    color: burlywood;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fff;
+}
+h2{
+    color: aliceblue;
+    font-family:  Silkscreen, cursive;
+}
+
+.social{
+    position: relative;
+    top: 50%;
+}
+
+.linkedin{
+position: absolute;
+    left: 35%;
+   color: #DADDFC;
+   margin-left: 2px;
+   background-color: darkslategrey;
+}
+
+.github{
+    position: absolute;
+    right: 44%;
+    color: #DADDFC;
+    background-color: darkslategrey;    
+}
+
+@media(max-width:999px)  {
+
+    .linkedin{
+
+        position: relative;
+        left: -14%;
+    }
+
+    .github{
+       position: relative;
+       left: -3%;
+    }
+
+}
+
+
+/* Conteudo */
+
+main{
+    width: auto;
+    height: 100% ;
+    
+
+}
+
+
+.img{
+    
+    width: 100vw;
+    height: 50vh;
+    background: url('../IMAGENS/umberto-jXd2FSvcRr8-unsplash.jpg');
+    background-size: contain ;
+    opacity: 0.8;
+}
+
+.apresent_h2{
+   background: none;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 40%;
+    background-color: darkslategrey;
+    border-radius: 5%;
+
+   
+}
+
+#sobre{
+   position: relative;
+    margin-top: 80px;
+    width:1100px;
+    height: 30rem;
+    left: 9%;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+@media (max-width:999px) {
+    
+    #sobre {
+        position: relative;
+        width: 300px;
+        left: 22%;
+    }
+
+
+}
+
+.h2_sobre{
+    margin: 0 0 20px 0;
+
+}
+#sobre p {
+    color: #fff;
+}
+
+#Techs{
+    margin: 180px 0 0 0;
+    height: auto;
+    max-height: 1800px;
+}
+
+ .pok-img{
+    margin-top: 30px;
+    background: url('../IMAGENS/pokedex-img.PNG') no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: 150px;
+  
+   
+}
+
+.poke-txt{
+    position: relative;
+    bottom: 199px;
+    right: 25%;
+    color: gold;
+    text-shadow: 4px 2px 0.8px #2B2B2B;
+}   
+
+.pokedex{
+
+    position: relative;
+    width: 800px ;
+    left: 20%;
+    bottom: 160px;
+    color: #fff;
+}
+
+.btn-pokedex{
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    position: relative;
+    padding: 5px;
+    left: 40%;
+    bottom: 50px;
+    border-radius: 4%;
+    box-shadow: 15px 2px 9px black;
+    background-color: #B33030;
+    color: #DADDFC;
+}
+
+.btn-pokedex:hover{
+
+    background-color: whitesmoke;
+    color: #B33030;
+    text-shadow: 1px 1px #DADDFC;
+} 
+
+@media (max-width:999px)  {
+
+    #Techs{
+        position: relative;
+        width: 300px; 
+        height: 50rem;
+    }
+
+    #Techs > h2{
+
+        border: 3px solid red;
+        margin-left: 50%;
+    }
+
+    .pok-img{
+
+        position: relative;
+        left: 50%;
+        
+    }
+
+    .poke-txt{
+        left: 22%;
+        margin: 40px 0;
+        top: 1%;
+
+    }
+
+    .pokedex{
+
+        position: absolute;
+        width: 300px;
+        top: 45%;
+        margin-left: 7%;
+    }
+
+    .btn-pokedex{
+
+        position: absolute;
+        margin-bottom: 110px;
+    }
+
+
+}
+
+#contato{
+    margin-top: 200px;
+    background-color: #2C3639;
+   height: 10rem;
+}
+
+#contato > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.email{
+    color:#DADDFC;
+    font-family: 'Roboto', sans-serif;
+}
+
+.copy{
+
+    color: #DADDFC;
+    font-family: 'Roboto', sans-serif;
+    margin: 40px 0;
+}
+
